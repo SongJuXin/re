@@ -87,7 +87,7 @@ var switchPage=(function(){
 				if(e.target.tagName=='LI'){
 					index=e.target.getAttribute('index')
 				}
-				main.style.transform='translateY(-'+index*5.68+'rem)'
+				main.style.transform='translateY(-'+index*11.36+'rem)'
 					aL[index].id='p'+(index-1+2)
 			})
 			back.addEventListener('click',function(){

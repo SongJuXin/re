@@ -1,0 +1,659 @@
+html,body,.box{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.main{
+	width: 100%;
+	height:100%;
+}
+.cube{
+	width: 100%;
+	height: 100%;
+	background: url(img/cubeBg.jpg) center;
+	background-size:cover;
+	position:absolute;
+	z-index: 2;
+}	
+.par{
+	width: 3.2rem;
+	height:3.2rem;
+	margin: 5rem auto;
+	transform-style: preserve-3d;
+	transition:.5s;
+	transform: rotateX(-45deg) rotateY(-45deg);
+	/*animation: move 1s alternate infinite;*/
+}
+.title{
+	text-align: center;
+	background: black;
+	height: 1rem;
+	font-size: .6rem;
+	color: white;
+	line-height: 1rem;
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+}
+.main li{
+	width: 100%;
+	height: 100%;
+	background: #333;
+	position: relative;
+}
+.par li{
+	width: 100%;
+	height: 100%;
+	list-style: none;
+	color:black;
+	position: absolute;
+	line-height: 3.2rem;
+	text-align: center;
+	font-size:.6rem;
+	box-shadow: 0 0 .2rem #ccc;
+	text-shadow: 0 0 .04rem #aaa;
+	font-family: "微软雅黑";
+}
+.across{
+	position: absolute;
+	background: black;
+	width: 100%;
+	height: .1rem;
+	border-radius: .04rem;
+}
+.up{
+	position: absolute;
+	background: black;
+	height: 100%;
+	width: .1rem;
+	border-radius: .04rem;
+}
+.par li :nth-child(1){
+	top:33.3%;
+}
+.par li :nth-child(2){
+	top:66.7%
+}
+.par li :nth-child(3){
+	left:33.3%;
+	top: 0;
+}
+.par li :nth-child(4){
+	left: 66.7%;
+	top: 0;
+}
+.par>:nth-child(1){
+	transform: translateZ(1.6rem);
+	background: white;
+}
+.par>:nth-child(2){
+	transform: translateZ(-1.6rem) rotateY(180deg);
+	background: yellow;
+}
+.par>:nth-child(3){
+	transform: translateX(1.6rem) rotateY(90deg);
+	background: red;
+}
+.par>:nth-child(4){
+	transform: translateX(-1.6rem) rotateY(-90deg);
+	background: orange;
+}
+.par >:nth-child(5){
+	/*下面两种不一样*/
+/*transform:rotateX(-90deg) translateY(-.8rem);*/
+	transform: translateY(-1.6rem) rotateX(90deg) ;
+	background: blue;
+}
+.par >:nth-child(6){
+	transform: translateY(1.6rem) rotateX(-90deg) ;
+	background: green;
+}
+.first{
+	background: url(img/first.jpg) no-repeat!important;
+	background-size: cover!important;
+	color: white;
+}
+.main>li *{
+	opacity: 0;
+}
+.first :nth-child(1){
+	font-size: .6rem;
+	font-weight: bold;
+	width: 2.5rem;
+	left: 50%;
+	margin-left: -1.25rem;
+	top:3.6rem;
+	font-family: "微软雅黑";
+	position: absolute;
+}
+.first :nth-child(2){
+	font-size: .36rem;
+	width: 2.9rem;
+	position: absolute;
+	left:50%;
+	margin-left: -1.45rem;
+	top:4.4rem;
+}
+.first :nth-child(3){
+	width: 2.6rem;
+	font-size: .26rem;
+	font-family: "微软雅黑";
+	position: absolute;
+	left:50%;
+	bottom: 1rem;
+	margin-left: -1.3rem;
+}
+
+.basic{
+	color: #aaa;
+	position: absolute;
+	height: .6rem;
+	top:1rem;
+	right: 0;
+	width: 3.4rem;
+	font-family: "微软雅黑";
+	font-size: .48rem;
+}
+.basic span{
+	float: right;
+	font-size: .36rem;
+	margin-right: .2rem;
+	font-style: italic;			
+	color: white;	
+}
+.basic span:last-of-type{
+	position: absolute;
+	top:.6rem;
+}
+.basic i:first-of-type{
+	height: .02rem;
+	width: 3.5rem;
+	background: white;
+	position: absolute;
+	top:.6rem;
+	right: 0;
+}
+.basic i:last-of-type{
+	width: .02rem;
+	height: 1.4rem;
+	background: white;
+	position: absolute;
+	left: 2rem;
+}
+.info{
+	position: absolute;
+	width: 4.8rem;
+	top:2.4rem;
+	left: 1rem;
+}
+.info span{
+	color: white;
+	font-size: .32rem;
+	display: block;
+	height: .6rem;
+	color: #ccc;
+	font-family: "微软雅黑";
+	overflow: hidden;
+	white-space: nowrap;
+	width:4.2rem;
+	line-height: .6rem;
+}
+@keyframes type{
+	from{width: 0;}
+}
+.pho{
+	background: url(img/pho.png) no-repeat;
+	background-size:contain;
+	height: 4.6rem;
+	position: absolute;
+	bottom: 0;
+	width:5rem;
+	right: 0;
+	z-index: 2;
+}
+.line{
+	position: absolute;
+	left: .45rem;
+	height: 8rem;
+	width: .06rem;
+	background: #666;
+	top:1.5rem;
+}
+.line div{
+	width: .2rem;
+	height: .2rem;
+	border: .1rem solid #999;
+	border-radius: 50%;
+	margin-bottom: 2rem;
+	position: relative;
+	left: -.16rem;
+	background: #333;
+}
+.line :last-child{
+	transform:translateY(.4rem);
+}
+
+.tec div{
+	color: white;
+	padding-left: .9rem;
+	text-align: center;
+	line-height: .6rem;
+	height: .6rem;
+	margin-bottom: .4rem;
+}
+.tec div:first-of-type{
+	margin-top:2rem;
+}
+.tec h2{
+	color: white;
+	font-size: .36rem;
+	padding-bottom: .04rem;
+	border-bottom: .04rem solid white;
+	width: 2.2rem;
+	float: right;
+	height: .5rem;
+	font-family: "微软雅黑";
+	top:1rem;
+	font-weight: normal;
+	position: relative;
+	font-style: italic;
+	margin-right: .5rem;
+}
+
+.tec h2 span{
+	position: absolute;
+	right: .2rem;
+}
+.tec h2 :last-child{
+	top:.6rem;
+	right: .2rem;
+}
+.tec div img{
+	width: .7rem;
+	height: .7rem;
+	border-radius: 50%;
+}
+.tec div span{
+	font-size: .4rem;
+	height: .6rem;
+	line-height: .6rem;
+	text-align: left;
+	transform: scaleX(0.8);
+	display: inline-block;
+	width: 4.8rem;
+	position: relative;
+	bottom: .16rem;
+	font-weight: 100;
+}
+.tec div:first-of-type{
+	margin-top: 2.4rem;
+}
+.tec div:nth-of-type(1) span{
+	color: #FFFF99;
+}
+.tec div:nth-of-type(2) span{
+	color: #FFCC99;
+}
+.tec div:nth-of-type(3) span{
+	color: #FF0000;
+}
+.tec div:nth-of-type(4) span{
+	color: #99FF66;
+}
+.tec div:nth-of-type(5) span{
+	color: #6600FF;
+}
+.tec div:nth-of-type(6) span{
+	color: #33FFFF;
+}
+.tec div:nth-of-type(7) span{
+	color: #660099;
+}
+.tec div:nth-of-type(8){
+	margin: 0 auto;
+}
+.life h2{
+	color:white;
+	font-size: .3.6rem;
+	top:1.2rem;
+	position: absolute;
+	width: .6rem;
+	height: 3rem;
+	left: .8rem;
+	border-left: .02rem solid #aaa;
+	padding-left: .05rem;
+	z-index: 2;
+}
+.life h2:nth-of-type(2){
+	left: .6rem;
+	width: 2rem;
+	height: .4rem;
+	border: none;
+	transform-origin: left;
+	transform: rotateZ(90deg);
+}
+.life div img{
+	height: .8rem;
+	float: left;
+	margin-right: .6rem;
+	border-radius: .4rem;
+}
+.life div{
+	height: .8rem;
+	position: absolute;
+	border: .02rem solid #ccc;
+	width: 2.8rem;
+	right: .8rem;
+	border-radius: .4rem;
+	box-shadow: 0 0 .04rem #666;
+	z-index: 2;
+}
+.life div:nth-of-type(1){
+	top:4.2rem;
+	
+}
+.life div:nth-of-type(2){
+	top:6.2rem
+}
+.life div:nth-of-type(3){
+	top:8.2rem
+}
+.life p{
+	width: 3rem;
+	position: absolute;
+	left:50%;
+}
+
+.life p img{
+	width: 4rem;
+}
+.life span{
+	color: white;
+	font-size: .3rem;
+	float: left;
+	height: .8rem;
+	line-height: .8rem;
+	text-align: center;
+	font-family: "微软雅黑";
+	font-weight: 500;
+	text-shadow: 0 0 .2rem #666;
+}
+.show h2{
+	color:white;
+	padding: .2rem;
+	font-family: "微软雅黑";
+	margin-bottom: .2rem;
+	top:1rem;
+	position: relative;
+}
+.show h2 span:first-of-type{
+	font-size: .32rem;
+	position: relative;
+	left: .02rem;
+	display: inline-block;
+}
+.show h2 span{
+	position: relative;
+	top:.1rem;
+	font-size: .26rem;
+	display: inline-block;
+}
+.show h2 div{
+	width:.04rem;
+	height: .6rem;
+	background:white;
+	display: inline-block;
+	transform: rotateZ(30deg);
+	position: absolute;
+	left:1.54rem;
+}
+.show img{
+	width: 4rem;
+	position: absolute;
+	margin: .4rem;
+}
+.show>div{
+	width: 4.8rem;
+	height: 8rem;
+	position: absolute;
+	left: 50%;
+	margin-left: -2.4rem;
+	border: .2rem solid white;
+	transform: rotateZ(8deg) translateY(.4rem);
+	top:2rem
+}
+
+.end{
+	background: #ECECEC!important;
+}
+.end h2{
+	color: white;
+	font-size: .6rem;
+	left: 50%;
+	width: 1rem;
+	margin-left: -.5rem;
+	position: absolute;
+	top:26%;
+}
+.end div{
+	color: black;
+	font-size: .6rem;
+	top:40%;
+	width: 3.6rem;
+	position: absolute;
+	left: 50%;
+	margin-left: -1.6rem;
+}
+.end div span{
+	display: block;
+	font-family: "微软雅黑";
+	text-align: center;
+}
+#p1 *{
+	opacity: 1;
+}
+#p1 :nth-child(1){
+	animation:bounceInLeft 1s 0s both;
+}
+#p1 :nth-child(2){
+	animation:bounceInRight 1s .3s both;
+}
+#p1 :nth-child(3){
+	animation:bounceInDown 1s .6s both;
+}
+#p2 *{
+	opacity:1;
+}
+#p3 *{
+	opacity:1;
+}
+#p4 *{
+	opacity:1;
+}
+#p5 *{
+	opacity:1;
+}
+#p6 *{
+	opacity:1;
+}
+#p2 h2 :nth-child(1){
+	animation: zoomIn 1s both;
+}
+#p2 h2 :nth-child(2){
+	animation: zoomIn 1s both;
+}
+#p2 h2 :nth-child(3){
+	animation:zoomInLeft 1s both;
+}
+#p2 h2 :nth-child(4){
+	animation:zoomInRight 1s both;
+}
+#p2 .pho{
+	animation:lightSpeedIn 1s both;
+}
+#p2 .info :nth-child(1){
+	animation: type .5s  steps(50, end) both;
+}
+#p2 .info :nth-child(2){
+	animation: type .5s .5s steps(50, end) both;
+}
+#p2 .info :nth-child(3){
+	animation: type .5s 1s steps(50, end) both;
+}
+#p2 .info :nth-child(4){
+	animation: type .5s 1.5s steps(50, end) both;
+}
+#p2 .info :nth-child(5){
+	animation: type .5s 2s steps(50, end) both;
+}
+#p2 .info :nth-child(6){
+	animation: type .5s 2.5s steps(50, end) both;
+}
+#p2 .info :nth-child(7){
+	animation: type .5s 3s steps(50, end) both;
+}
+#p3>:nth-child(1){
+	animation: rotateIn .5s both;
+}
+#p3 div:nth-of-type(1) span{
+	animation: zoomInLeft 1s .5s both;
+}
+#p3 div:nth-of-type(2) span{
+	animation: zoomInRight 1s .5s both;
+}
+#p3 div:nth-of-type(3) span{
+	animation: zoomInLeft 1s .5s both;
+}
+#p3 div:nth-of-type(4) span{
+	animation: zoomInRight 1s .5s both;
+}
+#p3 div:nth-of-type(5) span{
+	animation: zoomInLeft 1s .5s both;
+}
+#p3 div:nth-of-type(6) span{
+	animation: zoomInRight 1s .5s both;
+}
+#p3 div:nth-of-type(7) span{
+	animation: zoomInLeft 1s .5s both;
+}
+#p4 h2{
+	animation: zoomIn 1s;
+}
+#p4 div{
+	animation: bounceInRight 1s;
+}
+#p4 p:nth-of-type(1){
+	bottom: 1rem;
+	margin-left: -2rem;
+	transform: rotateZ(60deg);
+	transition: all 1s;
+}
+#p4 p:nth-of-type(2){
+	top:1.6rem;
+	margin-left: -3rem;
+	transform: rotateZ(-60deg);
+	transition: all 1s 1s;
+}
+#p4 p:nth-of-type(3){
+	bottom: 1rem;
+	transform: rotateZ(-40deg);
+	transition: all 1s 2s;
+}
+#p4 p:nth-of-type(4){
+	top:1.7rem;
+	margin-left: -1.5rem;
+	transform: rotateZ(40deg);
+	transition: all 1s 3s;
+}
+#p5 h2 span:first-of-type{
+	animation: bounceInLeft 1s ;
+}
+#p5 h2 span:last-of-type{
+	animation: bounceInRight 1s;
+}
+#p5 h2 div{
+	animation: bounceInDown 1s 1s backwards;
+}
+#p5>div :nth-child(1){
+	animation: bounceInLeft 1s 2s backwards;
+}
+#p5>div :nth-child(2){
+	top:2rem;
+	transform: rotateZ(-8deg);
+	animation: bounceInRight 1s 3s backwards;
+}
+#p5>div :nth-child(3){
+	top:5rem;
+	transform: rotateZ(8deg);
+	animation: bounceInDown 1s 4s backwards;
+}
+#p5>div :nth-child(4){
+	transform: rotateZ(-8deg);
+	animation: bounceInUp 1s 5s backwards;
+}
+#p6 {
+	animation: bounceInRight 1s backwards;
+}
+.btn{
+	position: absolute;
+	right: .01rem;
+	bottom: .01rem;
+	z-index: 2;
+	width: 1.6rem;
+	height: 1.4rem;
+}
+.back:before {
+	position: absolute;
+	content: " ";
+	border: transparent .28rem solid;
+	border-width: .26rem .16rem;
+	border-right-color: #CCC;
+	top: .01rem;
+	left: -.32rem;
+	height: 0;
+	width: 0;
+}
+.back {
+	position: relative;
+	width: .8rem;
+	height: .56rem;
+	background: #ccc;
+	border-radius: .1rem;
+	margin: .6rem;
+	text-align: center;
+	line-height: .56rem;
+	color: black;
+	font-size: .26rem;
+	border: .02rem solid #CCC;
+}
+.back:after {
+	position: absolute;
+	content: " ";
+	border: transparent .26rem solid;
+	border-width: .24rem .08rem;
+	border-right-color: #ccc;
+	top: .04rem;
+	left: -.3rem;
+	height: 0;
+	width: 0;
+}
+
+#music{
+	width: 0.6rem;
+	height: 0.6rem;
+	position: absolute;
+	top:2rem;
+	right: 0.2rem;
+	background: url(music.svg) no-repeat;
+	background-size: 100% 100%;
+	z-index: 3;
+}
+.music{
+	opacity: 1;
+	animation: move 1s linear both infinite;
+	
+}
+@keyframes move{
+	from{transform: rotate(0);}
+	to{transform: rotate(360deg);}
+}
