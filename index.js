@@ -52,6 +52,7 @@ var switchPage=(function(){
 	var bey=document.querySelector('#bey')
 	var curIndex
 	var slides
+	var wid=aL[0].offsetHeight
 	return {
 		init:function(){
 			var iSwiper=new Swiper('.swiper-container',{
@@ -87,7 +88,8 @@ var switchPage=(function(){
 				if(e.target.tagName=='LI'){
 					index=e.target.getAttribute('index')
 				}
-				main.style.transform='translateY(-'+index*11.36+'rem)'
+				console.log(aL[0].offsetHeight)
+				main.style.transform='translateY(-'+index*wid+'px)'
 					aL[index].id='p'+(index-1+2)
 			})
 			back.addEventListener('click',function(){
