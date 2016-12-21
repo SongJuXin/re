@@ -411,11 +411,11 @@ html,body,.box{
 .show img{
 	width: 4rem;
 	position: absolute;
-	margin: .4rem;
+	margin: .2rem;
 }
 .show>div{
 	width: 4.8rem;
-	height: 8rem;
+	height: 7.5rem;
 	position: absolute;
 	left: 50%;
 	margin-left: -2.4rem;
