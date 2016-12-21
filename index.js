@@ -81,6 +81,7 @@ var switchPage=(function(){
 				cube.style.display='none'
 				for(var i=0;i<aL.length;i++){
 					aL[i].style.zIndex=''
+                    aL[i].id=''
 				}
 				if(e.target.tagName=='DIV'){
 					index=e.target.parentNode.getAttribute('index')
