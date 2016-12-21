@@ -89,7 +89,6 @@ var switchPage=(function(){
 				if(e.target.tagName=='LI'){
 					index=e.target.getAttribute('index')
 				}
-				console.log(aL[0].offsetHeight)
 				main.style.transform='translateY(-'+index*wid+'px)'
 					aL[index].id='p'+(index-1+2)
 			})

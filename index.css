@@ -185,6 +185,7 @@ html,body,.box{
 	width: 4.8rem;
 	top:2.4rem;
 	left: 1rem;
+	z-index: 3;
 }
 .info span{
 	color: white;
